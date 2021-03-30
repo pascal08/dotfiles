@@ -1,0 +1,35 @@
+[global_config]
+  focus = mouse
+  window_state = fullscreen
+  tab_position = bottom
+  hide_from_taskbar = True
+  always_on_top = True
+  sticky = True
+  enabled_plugins = LaunchpadBugURLHandler, LaunchpadCodeURLHandler, APTURLHandler, TerminalShot
+[keybindings]
+  full_screen = <Ctrl><Shift>F11
+  hide_window = F1
+  group_all = None
+  group_all_toggle = <Super>g
+  help = None
+[profiles]
+  [[default]]
+    background_color = "#14151b"
+    background_darkness = 0.9
+    background_type = transparent
+    cursor_color = "#C0C5CE"
+    font = Fixed 10
+    foreground_color = "#c0c5ce"
+    show_titlebar = False
+    palette = "#1b2b34:#ec5f67:#99c794:#fac863:#6699cc:#c594c5:#5fb3b3:#c0c5ce:#65737e:#ec5f67:#99c794:#fac863:#6699cc:#c594c5:#5fb3b3:#c0c5ce"
+    custom_command = 'echo \"foo#bar\"'
+[layouts]
+  [[default]]
+    [[[child1]]]
+      parent = window0
+      #profile = default
+      type = Terminal
+    [[[window0]]]
+      #parent = ""
+      type = Window
+[plugins]
